@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David Yano's Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="weatherContainer">
+      <form id="weatherform">
+        <input type="text" id="cityInput" placeholder="Enter a city..." name="city" required />
+        <button type="submit" id="myBtn">&#128269;</button>
+      </form>
+
+      <section class="weatherInfo">
+        <div id="errorDisplay" class="errorDisplay" style="display: none;"></div>
+
+        <div class="weathercontent">
+          <div class="first">
+           <div id="cityDisplay">City <span id="flag"></span></div>
+            <div id="dateDisplay">Date</div>
+          </div>
+          <div class="first">
+            <div id="weatherEmoji">🌤</div>
+            <div id="temperatureDisplay">-- °C</div>
+          </div>
+          <div class="first">
+            <div id="description">Description</div>
+            <div id="humidityDisplay">💧 <small id="small">--%</small></div>
+          </div>
+        </div>
+
+        <div class="forecast">
+          <h2>3-Day Forecast</h2>
+          <div class="forecastContent" id="forecastContent">
+            <!-- Forecast items will be inserted here -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('img/weather.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(15px);
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.weatherContainer {
+  padding: 20px;
+  border-radius: 25px;
+  background: linear-gradient(to top, rgba(0,0,0,0.2), rgba(255,255,255,0.15));
+  color: white;
+  width: 300px;
+}
+
+form {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  padding-left: 15px;
+  outline: none;
+}
+
+form button {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.weatherInfo {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weathercontent {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  width: 100%;
+  gap: 50px;
+}
+
+#weatherEmoji {
+  font-size: 2em;
+}
+
+.forecast h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.forecastContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.forecastItem {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.errorDisplay {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
+}
+#flag {
+  vertical-align: middle;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+
