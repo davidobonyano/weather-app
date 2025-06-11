@@ -1,4 +1,4 @@
-const apiKey = '9ec4e92eb2e5d18c9508faf625263e9d';
+const apiKey = 'c4e92eb2e5d18c9508faf625263e9d';
 const weatherform = document.getElementById('weatherform');
 const cityInput = document.getElementById('cityInput');
 const weatherInfo = document.querySelector('.weatherInfo');
@@ -101,7 +101,7 @@ function displayError(message) {
   weatherInfo.style.display = 'flex';
 }
 
-// ✅ Default location weather on page load
+//  Default location weather on page load
 window.addEventListener('load', () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(async (position) => {
