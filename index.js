@@ -27,7 +27,7 @@ weatherform.addEventListener('submit', async (event) => {
 async function fetchWeatherByCity(city) {
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
     );
 
     if (!response.ok) throw new Error('City not found');
@@ -111,7 +111,7 @@ window.addEventListener('load', () => {
 
       try {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+          `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
         );
         if (!response.ok) throw new Error('Could not fetch your location weather');
         const data = await response.json();
