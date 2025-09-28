@@ -1,4 +1,5 @@
-const apiKey = '';
+// API configuration - will be replaced during build
+const API_KEY = '9ec4e92eb2e5d18c9508faf625263e9d';
 const weatherform = document.getElementById('weatherform');
 const cityInput = document.getElementById('cityInput');
 const weatherInfo = document.querySelector('.weatherInfo');

@@ -1,0 +1,13 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A beautiful weather app by David Yano",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "deploy": "npm run build && git add . && git commit -m 'Deploy weather app' && git push"
+  },
+  "keywords": ["weather", "api", "javascript", "html", "css"],
+  "author": "David Yano",
+  "license": "MIT"
+}
